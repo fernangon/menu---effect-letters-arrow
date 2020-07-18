@@ -1,0 +1,86 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+}
+
+
+.overlay {
+    position: fixed; 
+
+    width: 100%;
+    height: 100vh;
+
+    background: red;
+    color: #000;
+}
+
+
+.btn-container {
+    position: fixed;
+    right: 0;
+
+    margin: 30px;
+
+    font-size: 40px;
+}
+
+
+.menu {
+    position: absolute; 
+    bottom: 0;
+
+    margin: 20px;
+}
+
+
+.menu-item {
+    margin: 4px;
+    margin-top: -50px;
+
+    font-size: 140px;
+
+    overflow: hidden;
+}
+
+
+.menu-item-wrapper {
+    display: flex;
+
+    position: relative;
+    /* (1)----------------------------------------------------------------------------->>> */
+    left: -20%;
+    /* left: 0%; */ /* DEBUG */
+
+    transition: all .2s ease-out;
+}
+
+
+.menu-item:hover .menu-item-wrapper {
+    left: 0; /* (1) <<<-------------------------------------------------------------------- */
+}
+
+
+ion-icon {
+    position: relative;
+    top: 8px;
+    margin-right: 10px;
+}
+
+
+a {
+    font-family: "Helvetica";
+    font-weight: 400;
+
+    text-decoration: none;
+
+    color: #000;
+}
+
+
+
+
+
